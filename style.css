@@ -1,0 +1,1362 @@
+<style>
+    .home {
+      background-color: rgba(255, 255, 255, 1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: center;
+    }
+    .div {
+      display: flex;
+      flex-direction: column;
+      align-self: stretch;
+      position: relative;
+      min-height: 650px;
+      width: 100%;
+      padding-top: 18px;
+      align-items: center;
+    }
+    @media (max-width: 991px) {
+      .div {
+        max-width: 100%;
+      }
+    }
+    .img {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .div-2 {
+      position: relative;
+      display: flex;
+      width: 100%;
+      max-width: 1184px;
+      gap: 20px;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font: 700 14px/41px Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .div-2 {
+        max-width: 100%;
+      }
+    }
+    .img-2 {
+      aspect-ratio: 6.45;
+      object-fit: contain;
+      object-position: center;
+      width: 226px;
+      max-width: 100%;
+      margin: auto 0;
+    }
+    .div-3 {
+      display: flex;
+      gap: 20px 31px;
+    }
+    .home {
+      color: rgba(255, 255, 255, 1);
+    }
+    .about {
+      font-weight: 400;
+    }
+    .contact {
+      font-weight: 400;
+    }
+    .div-4 {
+      width: 1px;
+      height: 13px;
+      margin: auto 0;
+    }
+    .call-now-for-a-consult-123-456-7890 {
+      color: rgba(91, 200, 175, 1);
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .div-5 {
+      position: relative;
+      z-index: 10;
+      margin-top: 66px;
+      width: 100%;
+      max-width: 1184px;
+    }
+    @media (max-width: 991px) {
+      .div-5 {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    .div-6 {
+      gap: 20px;
+      display: flex;
+    }
+    @media (max-width: 991px) {
+      .div-6 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+      }
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 56%;
+      margin-left: 0px;
+    }
+    @media (max-width: 991px) {
+      .column {
+        width: 100%;
+      }
+    }
+    .div-7 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-self: stretch;
+      font-family: Montserrat, sans-serif;
+      color: rgba(255, 255, 255, 1);
+      margin: auto 0;
+    }
+    @media (max-width: 991px) {
+      .div-7 {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    .get-an-intervention {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 72px;
+      align-self: start;
+    }
+    @media (max-width: 991px) {
+      .get-an-intervention {
+        max-width: 100%;
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+    .asd {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-top: 24px;
+    }
+    @media (max-width: 991px) {
+      .asd {
+        max-width: 100%;
+      }
+    }
+    .column-2 {
+      display: flex;
+      flex-direction: column;
+      max-width: 800px; /* Adjust the max-width as needed */
+      margin: 0 auto; /* Center the column horizontally */
+      margin-left: 20px;
+      gap: 20px; 
+    }
+    @media (max-width: 991px) {
+      .column-2 {
+        width: 100%;
+      }
+    }
+    .div-8 {
+      border-radius: 12px;
+      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.12);
+      position: relative;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 54px 28px;
+      font: 400 16px Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .div-8 {
+        max-width: 100%;
+        margin-top: 40px;
+        padding: 0 20px;
+      }
+    }
+    .contact-us {
+      color: rgba(255, 255, 255, 1);
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      align-self: center;
+    }
+    .div-9 {
+      display: flex;
+      margin-top: 28px;
+      gap: 16px;
+    }
+    .img-3 {
+      aspect-ratio: 3.7;
+      object-fit: contain;
+      object-position: center;
+      width: 200px;
+      max-width: 100%;
+    }
+    .rectangle {
+      border-radius: 2px;
+      background-color: rgba(255, 255, 255, 0.04);
+      align-self: start;
+      margin-top: 6px;
+      padding: 14px 16px;
+      width: 200px;  
+    }
+    @media (max-width: 991px) {
+      .rectangle {
+        padding-right: 20px;
+      }
+    }
+    .div-10 {
+      display: flex;
+      margin-top: 16px;
+      gap: 16px;
+    }
+    .rectangle-2 {
+      border-radius: 2px;
+      background-color: rgba(255, 255, 255, 0.04);
+      padding: 14px 16px;
+      width:180px;
+    }
+    @media (max-width: 991px) {
+      .rectangle-2 {
+        padding-right: 20px;
+      }
+    }
+    .rectangle-3 {
+      border-radius: 2px;
+      background-color: rgba(255, 255, 255, 0.04);
+      white-space: nowrap;
+      padding: 14px 16px;
+      width: 200px;
+    }
+    @media (max-width: 991px) {
+      .rectangle-3 {
+        padding-right: 20px;
+        white-space: initial;
+      }
+    }
+    .rectangle-4 {
+      border-radius: 2px;
+      background-color: rgba(255, 255, 255, 0.04);
+      display: flex;
+      margin-top: 16px;
+      gap: 20px;
+      white-space: nowrap;
+      justify-content: space-between;
+      padding: 14px 17px;
+      width: 420px;
+    }
+    @media (max-width: 991px) {
+      .rectangle-4 {
+        white-space: initial;
+      }
+    }
+    .img-4 {
+      aspect-ratio: 1.6;
+      object-fit: contain;
+      object-position: center;
+      width: 8px;
+      margin: auto 0;
+    }
+    .rectangle-5 {
+      border-radius: 4px;
+      background-color: rgba(91, 200, 175, 1);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+      align-self: center;
+      display: flex;
+      margin-top: 41px;
+      gap: 8px;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 1);
+      font-weight: 700;
+      white-space: nowrap;
+      text-align: center;
+      padding: 16px 44px;
+    }
+    @media (max-width: 991px) {
+      .rectangle-5 {
+        margin-top: 40px;
+        white-space: initial;
+        padding: 0 20px;
+      }
+    }
+    .img-5 {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 24px;
+    }
+    .img-6 {
+      aspect-ratio: 16.13;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      align-self: stretch;
+    }
+    @media (max-width: 991px) {
+      .img-6 {
+        max-width: 100%;
+      }
+    }
+    .div-11 {
+      background-color: rgba(245, 245, 245, 1);
+      align-self: stretch;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 80px 137px;
+    }
+    @media (max-width: 991px) {
+      .div-11 {
+        max-width: 100%;
+        padding: 0 20px 100px;
+      }
+    }
+    .div-12 {
+      display: flex;
+      margin-bottom: -27px;
+      width: 100%;
+      max-width: 1184px;
+      flex-direction: column;
+    }
+    @media (max-width: 991px) {
+      .div-12 {
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    .div-13 {
+    }
+    @media (max-width: 991px) {
+      .div-13 {
+        max-width: 100%;
+      }
+    }
+    .div-14 {
+      gap: 20px;
+      display: flex;
+    }
+    @media (max-width: 991px) {
+      .div-14 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+      }
+    }
+    .column-3 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 33%;
+      margin-left: 0px;
+    }
+    @media (max-width: 991px) {
+      .column-3 {
+        width: 100%;
+      }
+    }
+    .img-7 {
+      aspect-ratio: 2.06;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      border-radius: 8px;
+      flex-grow: 1;
+    }
+    @media (max-width: 991px) {
+      .img-7 {
+        margin-top: 36px;
+      }
+    }
+    .column-4 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 33%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-4 {
+        width: 100%;
+      }
+    }
+    .img-8 {
+      aspect-ratio: 2.06;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      border-radius: 8px;
+      flex-grow: 1;
+    }
+    @media (max-width: 991px) {
+      .img-8 {
+        margin-top: 36px;
+      }
+    }
+    .column-5 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 33%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-5 {
+        width: 100%;
+      }
+    }
+    .img-9 {
+      aspect-ratio: 2.06;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      border-radius: 8px;
+      flex-grow: 1;
+    }
+    @media (max-width: 991px) {
+      .img-9 {
+        margin-top: 36px;
+      }
+    }
+    .div-15 {
+      display: flex;
+      margin-top: 64px;
+      gap: 20px 27px;
+      color: rgba(51, 51, 51, 1);
+      flex-wrap: wrap;
+      font: 700 36px/1 Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .div-15 {
+        margin-top: 40px;
+      }
+    }
+    .we-understand {
+      flex-grow: 0;
+      flex-basis: auto;
+    }
+    .div-16 {
+      width: 813px;
+      max-width: 100%;
+      height: 1px;
+      margin: auto 0;
+    }
+    .div-17 {
+      margin-top: 36px;
+    }
+    @media (max-width: 991px) {
+      .div-17 {
+        max-width: 100%;
+      }
+    }
+    .div-18 {
+      gap: 20px;
+      display: flex;
+    }
+    @media (max-width: 991px) {
+      .div-18 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+      }
+    }
+    .column-6 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 33%;
+      margin-left: 0px;
+    }
+    @media (max-width: 991px) {
+      .column-6 {
+        width: 100%;
+      }
+    }
+    .older-adults-want-to-play-active-and-meaningful-roles-in-their-lives-including-as-part-of-a-social-network-a-neighborhood-and-a-community-service-providers-and-policymakers-must-consider-that-a-lack-of-sense-of-purpose-can-become-problematic-as-people-age-engaging-them-in-leisure-activities-and-volunteer-work-is-important {
+      color: rgba(51, 51, 51, 1);
+      font: 400 14px/24px Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .older-adults-want-to-play-active-and-meaningful-roles-in-their-lives-including-as-part-of-a-social-network-a-neighborhood-and-a-community-service-providers-and-policymakers-must-consider-that-a-lack-of-sense-of-purpose-can-become-problematic-as-people-age-engaging-them-in-leisure-activities-and-volunteer-work-is-important {
+        margin-top: 35px;
+      }
+    }
+    .column-7 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 33%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-7 {
+        width: 100%;
+      }
+    }
+    .older-adults-want-to-stay-active-and-contribute-to-society-in-a-reciprocal-manner-meaning-that-they-want-to-exchange-their-services-and-skills-with-others-for-the-mutual-benefit-of-the-neighborhood-or-community-qualitative-and-quantitative-studies-published-from-2005-to-2016-examining-the-social-needs-of-older-adults-were-eligible-for-inclusion {
+      color: rgba(51, 51, 51, 1);
+      font: 400 14px/24px Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .older-adults-want-to-stay-active-and-contribute-to-society-in-a-reciprocal-manner-meaning-that-they-want-to-exchange-their-services-and-skills-with-others-for-the-mutual-benefit-of-the-neighborhood-or-community-qualitative-and-quantitative-studies-published-from-2005-to-2016-examining-the-social-needs-of-older-adults-were-eligible-for-inclusion {
+        margin-top: 35px;
+      }
+    }
+    .column-8 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 33%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-8 {
+        width: 100%;
+      }
+    }
+    .div-19 {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      font-family: Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .div-19 {
+        margin-top: 35px;
+      }
+    }
+    .to-stimulate-social-contacts-neighborhood-initiatives-can-be-developed-social-meeting-places-such-as-pubs-and-churches-can-help-to-foster-the-development-of-close-and-peripheral-relationships {
+      color: rgba(51, 51, 51, 1);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .rectangle-6 {
+      border-radius: 4px;
+      display: flex;
+      margin-top: 17px;
+      gap: 8px;
+      font-size: 18px;
+      color: rgba(91, 200, 175, 1);
+      font-weight: 700;
+      line-height: 2;
+      padding: 15px 74px 9px;
+    }
+    @media (max-width: 991px) {
+      .rectangle-6 {
+        padding: 0 20px;
+      }
+    }
+    .img-10 {
+      aspect-ratio: 1.42;
+      object-fit: contain;
+      object-position: center;
+      width: 17px;
+      margin: auto 0;
+    }
+    .div-20 {
+      z-index: 10;
+      display: flex;
+      margin-top: -30px;
+      gap: 20px;
+      font-family: Montserrat, sans-serif;
+      color: rgba(255, 255, 255, 1);
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .img-11 {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 48px;
+      margin: auto 0;
+    }
+    .img-12 {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 269px;
+      border-radius: 0px 0px 0px 0px;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+      max-width: 100%;
+    }
+    .div-21 {
+      border-radius: 0px 0px 0px 0px;
+      background-color: rgba(25, 77, 68, 1);
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+      display: flex;
+      flex-direction: column;
+      padding: 45px 65px;
+      align-items: center;
+    }
+    @media (max-width: 991px) {
+      .div-21 {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+    }
+    .div-22 {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 26px;
+    }
+    @media (max-width: 991px) {
+      .div-22 {
+        max-width: 100%;
+        font-size: 20px;
+      }
+    }
+    .abbie-harvey {
+      margin: 0;
+    }
+    .img-13 {
+      aspect-ratio: 1.28;
+      object-fit: contain;
+      object-position: center;
+      width: 60px;
+      align-self: start;
+    }
+    .i-have-been-caring-for-my-mom-dad-off-and-on-for-about-10-years-now-and-i-know-the-importance-of-me-being-there-for-appointments-older-people-need-attention-love-and-care-that-they-truly-deserve {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      margin-top: 26px;
+      text-align: center;
+    }
+    @media (max-width: 991px) {
+      .i-have-been-caring-for-my-mom-dad-off-and-on-for-about-10-years-now-and-i-know-the-importance-of-me-being-there-for-appointments-older-people-need-attention-love-and-care-that-they-truly-deserve {
+        max-width: 100%;
+        font-size: 16px;
+      }
+    }
+    .img-14 {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 48px;
+      margin: auto 0;
+    }
+    .div-23 {
+      display: flex;
+      margin-top: 64px;
+      gap: 20px;
+      justify-content: space-between;
+      justify-content: center;
+    }
+    @media (max-width: 991px) {
+      .div-23 {
+        margin-top: 40px;
+      }
+    }
+    .ellipse {
+      background-color: rgba(91, 200, 175, 1);
+      border-radius: 50%;
+      display: flex;
+      width: 16px;
+      height: 16px;
+    }
+    .ellipse-2 {
+      background-color: rgba(234, 234, 234, 1);
+      border-radius: 50%;
+      display: flex;
+      width: 16px;
+      height: 16px;
+    }
+    .ellipse-3 {
+      background-color: rgba(234, 234, 234, 1);
+      border-radius: 50%;
+      display: flex;
+      width: 16px;
+      height: 16px;
+    }
+    .div-24 {
+      display: flex;
+      margin-top: 100px;
+      gap: 20px 27px;
+      color: rgba(51, 51, 51, 1);
+      flex-wrap: wrap;
+      font: 700 36px/1 Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .div-24 {
+        margin-top: 40px;
+      }
+    }
+    .we-can-organize-everything {
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    @media (max-width: 991px) {
+      .we-can-organize-everything {
+        max-width: 100%;
+      }
+    }
+    .div-25 {
+      width: 532px;
+      max-width: 100%;
+      height: 1px;
+      margin: auto 0;
+    }
+    .div-26 {
+      margin-top: 35px;
+      width: 100%;
+      max-width: 1185px;
+    }
+    @media (max-width: 991px) {
+      .div-26 {
+        max-width: 100%;
+      }
+    }
+    .div-27 {
+      gap: 20px;
+      display: flex;
+    }
+    @media (max-width: 991px) {
+      .div-27 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+      }
+    }
+    .column-9 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 30%;
+      margin-left: 0px;
+    }
+    @media (max-width: 991px) {
+      .column-9 {
+        width: 100%;
+      }
+    }
+    .interventions-should-focus-on-older-adults-desire-for-connectedness-participation-and-independence {
+      color: rgba(51, 51, 51, 1);
+      font: 400 18px/28px Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .interventions-should-focus-on-older-adults-desire-for-connectedness-participation-and-independence {
+        margin-top: 40px;
+      }
+    }
+    .column-10 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 70%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-10 {
+        width: 100%;
+      }
+    }
+    .div-28 {
+      flex-grow: 1;
+    }
+    @media (max-width: 991px) {
+      .div-28 {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    .div-29 {
+      gap: 20px;
+      display: flex;
+    }
+    @media (max-width: 991px) {
+      .div-29 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+      }
+    }
+    .column-11 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 50%;
+      margin-left: 0px;
+    }
+    @media (max-width: 991px) {
+      .column-11 {
+        width: 100%;
+      }
+    }
+    .loneliness-and-social-isolation-are-growing-public-health-concerns-in-our-aging-society-whilst-these-experiences-occur-across-the-life-span-50-of-individuals-aged-over-60-are-at-risk-of-social-isolation-and-one-third-will-experience-some-degree-of-loneliness-later-in-life-it-is-vital-to-reduce-loneliness-and-social-isolation-among-older-adults {
+      color: rgba(51, 51, 51, 1);
+      font: 400 14px/24px Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .loneliness-and-social-isolation-are-growing-public-health-concerns-in-our-aging-society-whilst-these-experiences-occur-across-the-life-span-50-of-individuals-aged-over-60-are-at-risk-of-social-isolation-and-one-third-will-experience-some-degree-of-loneliness-later-in-life-it-is-vital-to-reduce-loneliness-and-social-isolation-among-older-adults {
+        margin-top: 36px;
+      }
+    }
+    .column-12 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 50%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-12 {
+        width: 100%;
+      }
+    }
+    .the-methodology-framework-proposed-by-arskey-and-o-malley-and-further-developed-by-levac-et-al-was-used-to-guide-the-scoping-review-process-a-total-of-33-reviews-met-the-inclusion-criteria-evaluating-a-range-of-interventions-targeted-at-older-people-residing-in-the-community-or-institutionalised-settings {
+      color: rgba(51, 51, 51, 1);
+      font: 400 14px/24px Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .the-methodology-framework-proposed-by-arskey-and-o-malley-and-further-developed-by-levac-et-al-was-used-to-guide-the-scoping-review-process-a-total-of-33-reviews-met-the-inclusion-criteria-evaluating-a-range-of-interventions-targeted-at-older-people-residing-in-the-community-or-institutionalised-settings {
+        margin-top: 36px;
+      }
+    }
+    .div-30 {
+      display: flex;
+      margin-top: 43px;
+      width: 100%;
+      max-width: 1185px;
+      gap: 20px;
+      color: rgba(51, 51, 51, 1);
+      text-align: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font: 700 18px/2 Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .div-30 {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    .rectangle-7 {
+      border-radius: 4px;
+      padding: 42px 70px;
+    }
+    @media (max-width: 991px) {
+      .rectangle-7 {
+        padding: 0 20px;
+      }
+    }
+    .rectangle-8 {
+      width: 299px;
+      border-radius: 4px;
+      line-height: 28px;
+      padding: 27px 70px;
+    }
+    @media (max-width: 991px) {
+      .rectangle-8 {
+        padding: 0 20px;
+      }
+    }
+    .rectangle-9 {
+      border-radius: 4px;
+      padding: 39px 62px;
+    }
+    @media (max-width: 991px) {
+      .rectangle-9 {
+        padding: 0 20px;
+      }
+    }
+    .div-31 {
+      display: flex;
+      margin-top: 36px;
+      width: 100%;
+      max-width: 1185px;
+      gap: 20px;
+      color: rgba(51, 51, 51, 1);
+      text-align: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font: 700 18px/2 Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .div-31 {
+        max-width: 100%;
+      }
+    }
+    .rectangle-10 {
+      border-radius: 4px;
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      color: rgba(91, 200, 175, 1);
+      padding: 34px 57px;
+    }
+    @media (max-width: 991px) {
+      .rectangle-10 {
+        padding: 0 20px;
+      }
+    }
+    .insurance-advocacy {
+      margin: auto 0;
+    }
+    .img-15 {
+      aspect-ratio: 1.31;
+      object-fit: contain;
+      object-position: center;
+      width: 38px;
+      align-self: start;
+    }
+    .rectangle-11 {
+      border-radius: 4px;
+      padding: 40px 70px;
+    }
+    @media (max-width: 991px) {
+      .rectangle-11 {
+        padding: 0 20px;
+      }
+    }
+    .rectangle-12 {
+      border-radius: 4px;
+      padding: 39px 70px;
+    }
+    @media (max-width: 991px) {
+      .rectangle-12 {
+        padding: 0 20px;
+      }
+    }
+    .div-32 {
+      align-self: start;
+      width: 100%;
+      max-width: 1404px;
+    }
+    @media (max-width: 991px) {
+      .div-32 {
+        max-width: 100%;
+      }
+    }
+    .div-33 {
+      gap: 20px;
+      display: flex;
+    }
+    @media (max-width: 991px) {
+      .div-33 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+      }
+    }
+    .column-13 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 64%;
+      margin-left: 0px;
+    }
+    @media (max-width: 991px) {
+      .column-13 {
+        width: 100%;
+      }
+    }
+    .div-34 {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      align-items: center;
+      font-family: Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .div-34 {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    .img-16 {
+      aspect-ratio: 2.44;
+      object-fit: contain;
+      object-position: center;
+      width: 22px;
+    }
+    .were-experienced-in-our-individual-crafts-and-understand-how-each-one-of-our-roles-impacts-your-plan-holistically {
+      border-radius: 8px;
+      background-color: rgba(41, 124, 107, 1);
+      width: 300px;
+      max-width: 100%;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 1);
+      font-weight: 400;
+      line-height: 20px;
+      padding: 16px;
+    }
+    .div-35 {
+      display: flex;
+      flex-direction: column;
+      align-self: stretch;
+      position: relative;
+      min-height: 648px;
+      margin-top: 7px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 97px 80px;
+    }
+    @media (max-width: 991px) {
+      .div-35 {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+    }
+    .div-36 {
+      position: relative;
+      display: flex;
+      width: 472px;
+      max-width: 100%;
+      flex-direction: column;
+    }
+    .watch-the-video {
+      color: rgba(255, 255, 255, 1);
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 1;
+      margin-right: 28px;
+    }
+    @media (max-width: 991px) {
+      .watch-the-video {
+        max-width: 100%;
+        margin-right: 10px;
+      }
+    }
+    .div-37 {
+      display: flex;
+      margin-top: 53px;
+      gap: 20px 24px;
+    }
+    @media (max-width: 991px) {
+      .div-37 {
+        margin-top: 40px;
+      }
+    }
+    .img-17 {
+      aspect-ratio: 1.39;
+      object-fit: contain;
+      object-position: center;
+      width: 18px;
+      align-self: start;
+    }
+    .div-38 {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-basis: 0;
+      width: fit-content;
+    }
+    @media (max-width: 991px) {
+      .div-38 {
+        max-width: 100%;
+      }
+    }
+    .needs-assessment {
+      color: var(--ffffff, #fff);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+      align-self: start;
+    }
+    .the-advocacy-evaluation-toolkit-contains-the-instruments-used-to-collect-data-for-evaluating-the-consumer-voices-for-coverage-program {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      margin-top: 21px;
+    }
+    @media (max-width: 991px) {
+      .the-advocacy-evaluation-toolkit-contains-the-instruments-used-to-collect-data-for-evaluating-the-consumer-voices-for-coverage-program {
+        max-width: 100%;
+      }
+    }
+    .div-39 {
+      display: flex;
+      margin-top: 34px;
+      gap: 20px 24px;
+    }
+    .img-18 {
+      aspect-ratio: 1.39;
+      object-fit: contain;
+      object-position: center;
+      width: 18px;
+      align-self: start;
+    }
+    .div-40 {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-basis: 0;
+      width: fit-content;
+    }
+    @media (max-width: 991px) {
+      .div-40 {
+        max-width: 100%;
+      }
+    }
+    .insurance-advocacy-2 {
+      color: var(--ffffff, #fff);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+      align-self: start;
+    }
+    .we-are-committed-to-advocating-for-appropriate-coverage-and-payment-policies {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      margin-top: 16px;
+    }
+    @media (max-width: 991px) {
+      .we-are-committed-to-advocating-for-appropriate-coverage-and-payment-policies {
+        max-width: 100%;
+      }
+    }
+    .div-41 {
+      display: flex;
+      margin-top: 34px;
+      gap: 20px 24px;
+    }
+    .img-19 {
+      aspect-ratio: 1.39;
+      object-fit: contain;
+      object-position: center;
+      width: 18px;
+      align-self: start;
+    }
+    .div-42 {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-basis: 0;
+      width: fit-content;
+    }
+    @media (max-width: 991px) {
+      .div-42 {
+        max-width: 100%;
+      }
+    }
+    .treatment-planning-placement {
+      color: var(--ffffff, #fff);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+    }
+    @media (max-width: 991px) {
+      .treatment-planning-placement {
+        max-width: 100%;
+      }
+    }
+    .patients-can-better-understand-medical-procedures-discharge-instructions-etc {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      align-self: start;
+      margin-top: 16px;
+    }
+    .column-14 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 36%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-14 {
+        width: 100%;
+      }
+    }
+    .div-43 {
+      display: flex;
+      margin-top: 320px;
+      flex-direction: column;
+    }
+    @media (max-width: 991px) {
+      .div-43 {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    .img-20 {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 208px;
+      border-radius: 0px 0px 0px 0px;
+      max-width: 100%;
+    }
+    .img-21 {
+      aspect-ratio: 6.45;
+      object-fit: contain;
+      object-position: center;
+      width: 226px;
+      align-self: end;
+      margin-top: 149px;
+      max-width: 100%;
+    }
+    @media (max-width: 991px) {
+      .img-21 {
+        margin-top: 40px;
+      }
+    }
+    .div-44 {
+      background-color: rgba(234, 234, 234, 1);
+      align-self: stretch;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      color: rgba(117, 117, 117, 1);
+      justify-content: center;
+      padding: 38px 70px;
+      font: 400 14px Montserrat, sans-serif;
+    }
+    @media (max-width: 991px) {
+      .div-44 {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+    }
+    .div-45 {
+      display: flex;
+      width: 100%;
+      max-width: 1185px;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    @media (max-width: 991px) {
+      .div-45 {
+        max-width: 100%;
+      }
+    }
+    .2021-get-an-intervention-inc-all-rights-reserved {
+      line-height: 2;
+      margin: auto 0;
+    }
+    .privacy-policy-terms-of-use-site-map {
+      line-height: 24px;
+      text-align: right;
+    }
+
+    .success-rate-button {
+      border: 2px solid rgba(91, 200, 175, 1); /* Outline color */
+      background-color: none; /* Button background color */
+      color: rgba(91, 200, 175, 1); /* Text color */
+      padding: 10px 20px; /* Padding for the button */
+      font-size: 16px; /* Font size */
+      cursor: pointer; /* Pointer cursor on hover */
+      border-radius: 4px; /* Rounded corners */
+      transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+      text-align: center; /* Center text */
+      display: inline-block; /* Inline block for button */
+      text-decoration: none; /* Remove underline if styled as a link */
+    }
+    .button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between buttons */
+  max-width: 100%; /* Ensure the grid doesn't overflow */
+  margin: auto; /* Center the grid */
+  padding: 20px; /* Padding around the grid */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center button horizontally */
+  align-items: center; /* Center button vertically */
+}
+
+.button-style {
+  border: 2px solid rgba(91, 200, 175, 1); /* Outline color */
+  background-color: #fff; /* Button background color */
+  color: black; /* Text color */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+  text-align: center; /* Center text */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  width: 100%; /* Make buttons fill the grid cell */
+  height: 100px; /* Fixed height for buttons */
+  box-sizing: border-box; /* Include padding and border in button dimensions */
+}
+
+.button-style:hover {
+  background-color: rgba(91, 200, 175, 1); /* Background color on hover */
+  color: #fff; /* Text color on hover */
+}
+
+.img-15 {
+  display: flex; /* Ensure the image behaves correctly */
+  max-width: 100%; /* Responsive image */
+  margin: 0 auto; /* Center the image horizontally */
+  position: relative; /* Enable positioning adjustments */
+  top: -55px; /* Move the image up */
+  left: -320px; /* Move the image to the left */
+
+}
+.menu-item {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Default text color */
+  padding: 10px 20px; /* Padding around text */
+  display: inline-block; /* Ensure they sit side by side */
+  transition: color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect */
+.menu-item:hover {
+  color: black; /* Text color on hover */
+  background-color: white; /* Background color on hover */
+  border-radius: 4px; /* Optional: rounded corners */
+}
+
+
+
+.footer-link {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Default text color */
+  padding: 5px 10px; /* Padding around text */
+  display: inline-block; /* Ensure they sit side by side */
+  transition: color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect */
+.footer-link:hover {
+  color: white; /* Text color on hover */
+  background-color: black; /* Background color on hover */
+  border-radius: 4px; /* Optional: rounded corners */
+}
+
+.country-dropdown {
+  width: 50%; /* Make the dropdown full width of its container */
+  padding: 8px; /* Add padding inside the dropdown */
+  font-size: 16px; /* Adjust font size */
+  border-radius: 4px; /* Rounded corners */
+  border: 1px solid #fff; /* Border color */
+  background-color: #ccc; /* Background color */
+  transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+
+
+  </style>
